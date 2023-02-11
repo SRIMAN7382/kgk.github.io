@@ -4,38 +4,31 @@
     box-sizing: border-box;
 }
 
-body
-{
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-.top-header
-{
+.top-header {
     background-color:#B9F3E4;
     height: auto;
     min-width: 100%;
-
 }
-header
-{
+header {
     min-width: 100vw;
     background-color: transparent;
 }
-header nav
-{
+header nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 0 100px;
 
 }
-.logo
-{
+.logo {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-.logo-img
-{
+.logo-img {
     height: 90px;
 }
 nav ul
@@ -73,21 +66,53 @@ nav ul li a :hover
     background-color: burlywood;
 
 }
-.hero-selection
-{
-    min-width: 100vw;
-}
-.hero-box
+/* .hero-box
 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 40px 10ppx;
+    padding: 40px 10px;
 }
 .left-box
 {
     margin-left: 40px;
     padding: 50px 0;
+} */
+.hero-section
+{
+    width: 100%;
+    background-color: #B9F3E4;
+    height: 500px;
+}
+.hero-box {
+    padding: 50px;
+}
+.left-box {
+    width: 50%;
+    float: left;
+}
+.right-box {
+    width: 40%;
+    float: right;
+    margin-left: 20px;
+}
+@media only screen and (max-width: 340px) {
+    .nav-list {
+        display: none;
+    }
+    .hero-section {
+        height: 600px;
+    }
+    .hero-box {
+        padding: 20px;
+    }
+    .left-box {
+        width: 100%;
+    }
+    .right-box {
+        margin-top: 50px;
+        width: 100%;
+    }
 }
 .started
 {
@@ -102,27 +127,24 @@ nav ul li a :hover
     margin-bottom: 8px;
     font-weight: 550;
 }
-.left-box h1
-{
+.left-box h1 {
     font-size: 34px;
     margin-bottom: 8px;
     line-height: 44px;
 }
-span
-{
+span {
     color: papayawhip;
 
 }
-.left-par
-{
+.left-par {
     margin-bottom: 30px;
 }
-.right-img
-{
-    width: 500px;
+.right-img {
+    width: 80%;
+    border-radius: 20px;
 }
-.feature
-{
+.feature {
+    width: 100%;
     padding: 20px 40px;
     display: flex;
     height:50vh;
