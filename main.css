@@ -52,7 +52,7 @@ header nav {
 {
     color: black;
 }
-.btn
+.btn-sr
 {
     background-color: palevioletred !important;
     padding: 10px 25px;
@@ -61,7 +61,7 @@ header nav {
     text-decoration: none;
     transition: 0.5s;
 }
-.btn:hover
+.btn-sr:hover
 {
     background-color: burlywood !important;
 
