@@ -54,7 +54,7 @@ header nav {
 }
 .btn
 {
-    background-color: palevioletred;
+    background-color: palevioletred !important;
     padding: 10px 25px;
     border-radius: 30px;
     color: black;
