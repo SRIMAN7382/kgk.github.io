@@ -31,16 +31,16 @@ header nav {
 .logo-img {
     height: 90px;
 }
-nav ul
+.nav-list
 {
-    list-style-type: none;
+    list-style-type:none;
 }
-nav ul li
+.nav-list li
 {
     display: inline-block;
     margin: 0 25px;
 }
-nav ul li a
+.nav-list li a
 {
     text-decoration: none;
     color: rebeccapurple;
@@ -48,7 +48,7 @@ nav ul li a
     font-size: 18px;
     transition: 0.4s ease-in-out;
 }
-nav ul li a :hover
+.nav-list li a :hover
 {
     color: black;
 }
@@ -96,6 +96,12 @@ nav ul li a :hover
     float: right;
     margin-left: 20px;
 }
+.nav-list-m {
+    display: none;
+}
+.nav-list-m li {
+    margin-top: 10px;
+}
 @media only screen and (max-width: 768px) {
     .nav-list {
         display: none;
@@ -112,6 +118,9 @@ nav ul li a :hover
     .right-box {
         margin-top: 50px;
         width: 100%;
+    }
+    .nav-list-m {
+        display: block;
     }
 }
 .started
@@ -143,7 +152,7 @@ span {
     width: 80%;
     border-radius: 20px;
 }
-.feature {
+/* .feature {
     width: 100%;
     padding: 20px 40px;
     display: flex;
@@ -151,8 +160,8 @@ span {
     background-color: white;
     align-items: center;
     justify-content: space-around;
-}
-.boxes
+} */
+/* .boxes
 {
     padding: 20px 40px;
     display: flex;
@@ -161,11 +170,29 @@ span {
     justify-content: space-between;
     border-radius: 6px;
     transition: 0.3s ease-in-out;
+} */
+.feature {
+    width: 100%;
+    padding: 20px 40px;
 }
-.boxes:hover
-{
+.boxes {
+    padding: 20px 40px;
+    width: 25%;
+    float: left;
+    border-radius: 6px;
+    transition: .3s ease-in-out;
+    margin-right: 0px;
+    text-align: center;
+}
+.boxes:hover {
     box-shadow: 0px 5px 15px black;
     cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+    .boxes {
+        width: 100%;
+        margin-left: 0px;
+    }
 }
 .boxes h2
 {
