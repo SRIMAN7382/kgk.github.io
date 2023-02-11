@@ -63,7 +63,7 @@ header nav {
 }
 .btn:hover
 {
-    background-color: burlywood;
+    background-color: burlywood !important;
 
 }
 /* .hero-box
