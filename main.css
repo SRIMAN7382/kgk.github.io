@@ -96,7 +96,7 @@ nav ul li a :hover
     float: right;
     margin-left: 20px;
 }
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 768px) {
     .nav-list {
         display: none;
     }
