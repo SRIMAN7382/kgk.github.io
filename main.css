@@ -1,0 +1,161 @@
+*{
+    margin: auto;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.top-header
+{
+    background-color:#B9F3E4;
+    height: auto;
+    min-width: 100%;
+
+}
+header
+{
+    min-width: 100vw;
+    background-color: transparent;
+}
+header nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 100px;
+
+}
+.logo
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logo-img
+{
+    height: 90px;
+}
+nav ul
+{
+    list-style-type: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin: 0 25px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: rebeccapurple;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.4s ease-in-out;
+}
+nav ul li a :hover
+{
+    color: black;
+}
+.btn
+{
+    background-color: palevioletred;
+    padding: 10px 25px;
+    border-radius: 30px;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.btn:hover
+{
+    background-color: burlywood;
+
+}
+.hero-selection
+{
+    min-width: 100vw;
+}
+.hero-box
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 10ppx;
+}
+.left-box
+{
+    margin-left: 40px;
+    padding: 50px 0;
+}
+.started
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 19px;
+}
+.ready
+{
+    color: blueviolet;
+    margin-bottom: 8px;
+    font-weight: 550;
+}
+.left-box h1
+{
+    font-size: 34px;
+    margin-bottom: 8px;
+    line-height: 44px;
+}
+span
+{
+    color: papayawhip;
+
+}
+.left-par
+{
+    margin-bottom: 30px;
+}
+.right-img
+{
+    width: 500px;
+}
+.feature
+{
+    padding: 20px 40px;
+    display: flex;
+    height:50vh;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+.boxes
+{
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+.boxes:hover
+{
+    box-shadow: 0px 5px 15px black;
+    cursor: pointer;
+}
+.boxes h2
+{
+    font-size: 18px;
+    color: violet;
+    margin:5px o;
+}
+.boxes p
+{
+    color: black;
+}
+.al-shadow
+{
+    box-shadow: 0px 5px 15px whitesmoke;
+}
