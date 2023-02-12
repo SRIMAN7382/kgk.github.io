@@ -12,6 +12,11 @@ body {
     height: auto;
     min-width: 100%;
 }
+@media only screen and (max-width: 768px) {
+    .top-header {
+        padding-bottom: 30px;
+    }
+}
 header {
     min-width: 100vw;
     background-color: transparent;
@@ -32,6 +37,10 @@ header nav {
     height: 90px;
 }
 .nav-list
+{
+    list-style-type:none;
+}
+.nav-list-m
 {
     list-style-type:none;
 }
