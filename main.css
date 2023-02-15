@@ -44,6 +44,10 @@ header nav {
 {
     list-style-type:none;
 }
+.nav-list-m li a
+{
+    text-decoration: none;
+}
 .nav-list li
 {
     display: inline-block;
@@ -112,6 +116,10 @@ header nav {
     margin-top: 10px;
 }
 @media only screen and (max-width: 768px) {
+    .logo img {
+        width: 200%;
+        margin-left: -50px;
+    }
     .nav-list {
         display: none;
     }
@@ -197,6 +205,10 @@ span {
     box-shadow: 0px 5px 15px black;
     cursor: pointer;
 }
+.boxes a {
+    
+    text-decoration: none;
+}
 @media only screen and (max-width: 768px) {
     .boxes {
         width: 100%;
@@ -216,4 +228,10 @@ span {
 .al-shadow
 {
     box-shadow: 0px 5px 15px whitesmoke;
+}
+.whatsapp-logo {
+    z-index: 100;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
 }
