@@ -112,5 +112,38 @@
     <div class="whatsapp-btn bg-white p-3 rounded-circle animate__animated animate__tada animate__delay-4s" style="position: fixed; bottom: 20px; right: 20px; cursor: pointer;" onclick="window.location.href='https://wa.me/919392979899'">
         <img src="images/WhatsApp.svg" width="40">
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Okay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            // if cookie exists, dont show modal else show modal and set cookie
+            if (document.cookie.indexOf("modalShown=true") >= 0) {
+                // cookie exists, do nothing
+            } else {
+                // cookie doesn't exist, show modal
+                var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
+                    keyboard: false
+                })
+                myModal.show()
+                // set cookie to not show modal next time
+                document.cookie = "modalShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+            }
+        }
+    </script>
 </body>
 </html>
