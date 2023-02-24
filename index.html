@@ -24,7 +24,7 @@
         <nav class="navbar navbar-dark navbar-expand-lg p-3">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="images/logok.png" alt="logo" style="height: 50px;" class="rounded-5"/>
+                    <img src="images/logok.png" alt="logo" style="height: 45px;" class="rounded-5"/>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -59,7 +59,7 @@
                 </div>
             </div>
         </nav>
-        <div class="container mt-lg-5 px-2">
+        <div class="container mt-lg-5 px-3">
             <div class="row gy-3">
                 <div class="col-lg-6">
                     <div class="bg-white rounded-5 shadow p-5">
@@ -72,7 +72,7 @@
             </div>
         </div>
     </div>
-    <div class="container px-2 mt-5">
+    <div class="container px-4 mt-5">
         <div class="row gx-5 gy-3">
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="bg-white rounded-5 shadow p-3" style="cursor: pointer;" onclick="window.location.href='#'">
@@ -113,12 +113,11 @@
         <img src="images/WhatsApp.svg" width="40">
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">TERMS OF SERVICE</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     Last Edit 19/02/2023
@@ -128,9 +127,8 @@
                     Material Base is not responsible if any "INCORRECT CONTENT" provided in materials.If any INCORRECT CONTENT found please report us immediately.<br>
                     <p>Read all terms of service before accepting!!</p>
                 </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Accept</button>
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Decline</button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="setModalCookie()">Accept</button>
                 </div>
             </div>
         </div>
@@ -146,9 +144,11 @@
                     keyboard: false
                 })
                 myModal.show()
-                // set cookie to not show modal next time
-                document.cookie = "modalShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
             }
+        }
+        setModalCookie = function() {
+            // set cookie to hide modal next time
+            document.cookie = "modalShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
         }
     </script>
 </body>
