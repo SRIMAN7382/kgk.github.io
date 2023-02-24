@@ -8,16 +8,3 @@ html,body {
     background-repeat: no-repeat;
     background-position: center;
 }
-.modal-header
-{
-    background-color: black;
-}
-.modal-title
-{
-    color: red;
-}
-.modal-body
-{
-    background-color:black;
-    color: white;
-}
