@@ -1,0 +1,10 @@
+html,body {
+    height: 100%;
+}
+.landing {
+    height: 100%;
+    background-image: url("images/20230209_210517.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
