@@ -1,0 +1,61 @@
+
+
+.welcome {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  background-color: black;
+}
+
+.welcome>.text {
+  font-size: 10rem;
+  font-weight: bold;
+  font-family: 'Helvetica Neue', sans-serif;
+  position: absolute;
+  text-align: center;
+  display: grid;
+}
+
+.welcome>.layer4 {
+  color: rgb(186, 71, 239);
+  transition: 0.5s;
+  
+}
+
+.welcome>.layer3 {
+  color: rgb(109, 247, 111);
+  transform: translate(3px, 3px);
+  transition: 0.5s;
+}
+
+.welcome>.layer2 {
+  color: rgb(247, 109, 109);
+  transform: translate(5px, 5px);
+  transition: 0.5s;
+}
+
+.welcome>.layer1 {
+  color: rgb(66, 240, 252);
+  transform: translate(8px, 8px);
+  transition: 0.5s;
+}
+
+.welcome:hover>.layer4 {
+  color: rgb(186, 71, 239);
+  /* border-bottom: 5px solid black; */
+}
+
+.welcome:hover>.layer3 {
+  color: rgb(109, 247, 111);
+  transform: translate(10px, 10px);
+}
+
+.welcome:hover>.layer2 {
+  color: rgb(247, 109, 109);
+  transform: translate(15px, 15px);
+}
+
+.welcome:hover>.layer1 {
+  color: rgb(66, 240, 252);
+  transform: translate(20px, 20px);
+}

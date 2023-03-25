@@ -1,0 +1,248 @@
+body {
+    /* background-color: rgb(10, 10, 10); */
+    background: url(../images/Bg-universe.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;  
+    margin: 0px;
+    overflow: hidden;
+    border: whitesmoke;
+    position: relative;
+    background-color: rgb(10, 10, 10);
+  }
+
+  :root {  
+    --purple: rgb(123, 31, 162);
+    --violet: rgb(103, 58, 183);
+    --pink: rgb(244, 143, 177);
+  }
+  
+  @keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
+  }
+  
+  @keyframes scale {
+    from, to {
+      transform: scale(0);
+    }
+    
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    
+    to {
+      transform: rotate(180deg);
+    }
+  }
+  
+  h1 {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: clamp(2em, 2vw, 4em);
+    font-weight: 400;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 > .magic {
+    display: inline-block;
+    position: relative;
+    font-size: 5rem;
+    position: relative;
+    top: 40%;
+  }
+  
+  h1 > .magic > .magic-star {
+    --size: clamp(20px, 1.5vw, 30px);
+    
+    animation: scale 700ms ease forwards;
+    display: block;
+    height: var(--size);
+    left: var(--star-left);
+    position: absolute;
+    top: var(--star-top);
+    width: var(--size);
+  }
+  
+  h1 > .magic > .magic-star > svg {
+    animation: rotate 1000ms linear infinite;
+    display: block;
+    opacity: 0.7;
+  }
+  
+  h1 > .magic > .magic-star > svg > path {
+    fill: var(--violet);
+  }
+  
+  h1 > .magic > .magic-text {
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(
+      to right,
+      var(--purple),
+      var(--violet),
+      var(--pink),
+      var(--purple)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+  }
+  
+  #gallery {
+    height: 140vmax;
+    width: 140vmax;  
+    position: absolute;
+    padding: 12px;
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fff;
+    font-family: 'Monoton', cursive;
+    font-size: 6rem;
+    text-align: center;
+    text-shadow: red 2px 5px;
+  }
+
+  @media (max-width:991px){
+    .text-overlay{
+      font-size: 4rem;
+    }
+  }
+
+  .tile {
+    border-radius: 3vmax;
+    position: absolute;
+    transition: transform 800ms ease;
+    border: .3rem solid rgb(177, 178, 177);
+    box-shadow: 0px 5px 15px rgb(136, 131, 131);
+  }
+  
+  .tile:hover {
+    transform: scale(1.1);
+    border: .4rem solid rgb(244, 233, 233);
+  }
+  
+  .tile:hover > img {
+    opacity: 1;
+    transform: scale(1.01);
+  }
+  
+  .tile > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    opacity: 0.4;
+    transition: opacity 800ms ease,
+      transform 800ms ease;
+  }
+
+  .tile-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .tile:hover .tile-text {
+    opacity: 0;
+  }
+  
+  .tile:nth-child(1) {
+    background-color: rgb(141, 110, 99);
+    height: 24%;
+    width: 20%;
+    left: 5%;
+    top: 5%;
+  }
+  
+  .tile:nth-child(2) {
+    background-color: rgb(141, 110, 99);
+    height: 20%;
+    width: 20%;
+    left: 36%;
+    top: 16%;
+  }
+  
+  .tile:nth-child(3) {
+    background-color: rgb(141, 110, 99);
+    height: 18%;
+    width: 20%;
+    left: 10%;
+    top: 40%;
+  }
+  
+  .tile:nth-child(4) {
+    background-color: rgb(141, 110, 99);
+    height: 18%;
+    width: 20%;
+    left: 41%;
+    top: 48%;
+  }
+  
+  .tile:nth-child(5) {
+    background-color: rgb(141, 110, 99);
+    height: 16%;
+    width: 32%;
+    left: 8%;
+    top: 70%;
+  }
+  
+  .tile:nth-child(6) {
+    background-color: rgb(141, 110, 99);
+    height: 24%;
+    width: 20%;
+    left: 68%;
+    top: 8%;
+  }
+  
+  .tile:nth-child(7) {
+    background-color: rgb(141, 110, 99);
+    height: 16%;
+    width: 20%;
+    left: 50%;
+    top: 74%;
+  }
+  
+  .tile:nth-child(8) {
+    background-color: rgb(141, 110, 99);
+    height: 20%;
+    width: 28%;
+    left: 68%;
+    top: 42%;
+  }
+  
+  .tile:nth-child(9) {
+    background-color: rgb(250, 250, 250);
+    height: 16%;
+    width: 14%;
+    left: 78%;
+    top: 70%;
+  }
+
+  
+  

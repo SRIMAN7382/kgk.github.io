@@ -1,0 +1,1 @@
+let activeIndex = 0;

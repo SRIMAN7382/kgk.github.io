@@ -1,0 +1,134 @@
+body {
+    background-color: rgb(0, 0, 0); 
+    margin: 0px;  
+    height: 100vh;
+    background: url(../images/Bg1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+  }
+
+  .card-groups,
+  .card-group,
+  .card {
+    aspect-ratio: 5 / 7;
+  }
+  
+  .card-groups{
+    width: 100vmin;
+    position: relative;
+  }
+  .card-group,
+  .big-card {  
+    width: 25vmin;
+  }
+  
+  .card-group:nth-child(1) {
+    position: relative;
+    left: -35vh;
+    top: 5vh;
+    transition: transform 400ms ease;
+  }
+
+  .card-group:nth-child(2) {
+    position: relative;
+    left: 15vh;
+    top: -30vh;
+    transition: transform 400ms ease;
+  }
+
+  .card-group:nth-child(3) {
+    position: relative;
+    left: 60vh;
+    top: -65vh;
+    transition: transform 400ms ease;
+  }
+  
+  .card-group[data-status="unknown"] {
+    transform: scale(0);
+    transition: none;
+  }
+  
+  .card-group[data-status="active"] {
+    transition-delay: 300ms;
+  }
+  
+  .card-group[data-status="after"] {
+    transform: translateX(50%) scale(0);
+  }
+  
+  .card-group[data-status="before"] {
+    transform: translateX(-50%) scale(0);
+  }
+  
+  .card-group[data-status="becoming-active-from-after"] {
+    transform: translateX(50%) scale(0);
+    transition: none;
+  }
+  
+  .card-group[data-status="becoming-active-from-before"] {
+    transform: translateX(-50%) scale(0);
+    transition: none;
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    transition: transform 800ms cubic-bezier(.05,.43,.25,.95);
+    
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .big-card {
+    border-radius: 1vmin;
+    height: 14rem;
+  }
+
+  .big-card img{
+    height: 8rem;
+  }
+  
+  .little-card {
+    border-radius: 1vmin;
+    height: 14rem;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    box-shadow: -1vmin 1vmin 2vmin rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+  }
+  
+  
+  .card-group:hover > .big-card:nth-child(2) {
+    transform: translate(570%, 0%) rotate(0deg);
+  }
+  
+  .card-group:hover > .big-card:nth-child(4) {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  
+  .card-group:hover > .big-card:nth-child(6) {
+    transform: translate(0%, 230%) rotate(0deg);
+  }
+  
+  .card-group:hover > .big-card:nth-child(8) {
+    transform: translate(0%, 120%) rotate(0deg);
+  }
+  
+  .card-group:hover > .little-card:nth-child(1) {
+    transform: translate(450%, 0%) rotate(0deg);
+  }
+  
+  .card-group:hover > .little-card:nth-child(3) {
+    transform: translate(110%, 0%) rotate(0deg);
+  }
+  
+  .card-group:hover > .little-card:nth-child(5) {
+    transform: translate(230%, 170%) rotate(0deg);
+  }
+  
+  .card-group:hover > .little-card:nth-child(7) {
+    transform: translate(450%, 170%) rotate(0deg);
+  }
