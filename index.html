@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Material Base Sastra</title>
+    <title>Material Base</title>
     <link rel="stylesheet" href="homepage.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
@@ -24,7 +24,7 @@
         <nav class="navbar navbar-dark navbar-expand-lg p-3">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="images/logok.png" alt="logo" style="height: 50px;" class="rounded-5"/>
+                    <img src="images/logok.png" alt="logo" style="height: 45px;" class="rounded-5"/>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -39,7 +39,7 @@
                                 Materials
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="semester.html">Semester 1</a></li>
+                                <li><a class="dropdown-item" href="semester.html" >Semester 1</a></li>
                                 <li><a class="dropdown-item" href="semester.html">Semester 2</a></li>
                                 <li><a class="dropdown-item" href="sem3.html">Semester 3</a></li>
                                 <li><a class="dropdown-item" href="sem4.html">Semester 4</a></li>
@@ -49,17 +49,17 @@
                             </ul>
                         </li>
                         <li class="nav-item me-lg-5">
-                            <a class="nav-link active" href="https://forms.gle/Whg8GEW6wfGiDdby9">Suggestions</a>
+                            <a class="nav-link active" href="Calender.html" target="_blank">Main Calender</a>
                         </li>
                         <li class="nav-item me-lg-5">
                             <!-- pill button -->
-                            <a class="nav-link btn btn-success text-white" title="You can upload materials." href="https://forms.gle/HWkrPLTGLX18kymb7">Contribute</a>
+                            <a class="nav-link btn btn-success text-white" href="About us/index.html">About Us</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="container mt-lg-5 px-2">
+        <div class="container mt-lg-5 px-3">
             <div class="row gy-3">
                 <div class="col-lg-6">
                     <div class="bg-white rounded-5 shadow p-5">
@@ -72,7 +72,7 @@
             </div>
         </div>
     </div>
-    <div class="container px-2 mt-5">
+    <div class="container px-4 mt-5">
         <div class="row gx-5 gy-3">
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="bg-white rounded-5 shadow p-3" style="cursor: pointer;" onclick="window.location.href='#'">
@@ -105,26 +105,30 @@
         </div>
     </div>
     </div>
-    <footer class="mt-5 text-center p-3 shadow bg-primary text-white">
+    <footer class="mt-5 text-center p-3 shadow bg-white">
         <p>&copy; Material Base 2023. All rights reserved.</p>
-        <p>Content curated from <a href="https://instagram.com/materialhub_sastra" class="link-light">Material Hub</a>.</p>
+        <p>Content curated from <a href="https://instagram.com/materialhub_sastra">Material Hub</a>.</p>
     </footer>
     <div class="whatsapp-btn bg-white p-3 rounded-circle animate__animated animate__tada animate__delay-4s" style="position: fixed; bottom: 20px; right: 20px; cursor: pointer;" onclick="window.location.href='https://wa.me/919392979899'">
         <img src="images/WhatsApp.svg" width="40">
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">TERMS OF SERVICE</h1>
                 </div>
                 <div class="modal-body">
-                    ...
+                    Last Edit 19/02/2023
+                    <br>
+                    We had updated our terms of service.
+                    This Website is not officially appoved or organised by university.
+                    Material Base is not responsible if any "INCORRECT CONTENT" provided in materials.If any INCORRECT CONTENT found please report us immediately.<br>
+                    <p>Read all terms of service before accepting!!</p>
                 </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Okay</button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="setModalCookie()">Accept</button>
                 </div>
             </div>
         </div>
@@ -140,9 +144,11 @@
                     keyboard: false
                 })
                 myModal.show()
-                // set cookie to not show modal next time
-                document.cookie = "modalShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
             }
+        }
+        setModalCookie = function() {
+            // set cookie to hide modal next time
+            document.cookie = "modalShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
         }
     </script>
 </body>
