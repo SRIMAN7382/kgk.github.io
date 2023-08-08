@@ -134,8 +134,8 @@ z-index:100;
     position: absolute;
     color: #f1f1f1;
     /* transform: translate(50%,-25%); */
-    font-size: 3em;
-}
+    /* font-size: 3em;
+} */
 .content h2:nth-child(1)
 {
     color:transparent;
