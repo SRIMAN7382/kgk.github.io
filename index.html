@@ -125,13 +125,49 @@
         </div>
     </div>
     </div>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/xzbleaor",
+    title: "Feedback",
+    description: "Report if you found any materials missing or needed!!",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "Tell us",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script>
+
     <footer class="mt-5 text-center p-3 shadow bg-white">
         <p>&copy; Material Base 2023. All rights reserved.</p>
         <p>Content curated from <a href="https://instagram.com/materialhub_sastra">Material Hub</a>.</p>
     </footer>
-    <div class="whatsapp-btn bg-white p-3 rounded-circle animate__animated animate__tada animate__delay-4s" style="position: fixed; bottom: 20px; right: 20px; cursor: pointer;" onclick="window.location.href='https://wa.me/917702150488'">
+    <!-- <div class="whatsapp-btn bg-white p-3 rounded-circle animate__animated animate__tada animate__delay-4s" style="position: fixed; bottom: 20px; right: 20px; cursor: pointer;" onclick="window.location.href='https://wa.me/917702150488'">
         <img src="images/WhatsApp.svg" width="40">
-    </div>
+    </div> -->
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
