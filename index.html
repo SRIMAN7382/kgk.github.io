@@ -1,128 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MATERIAL DOMAIN</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"
-        integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Material Base</title>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "iraiazr7mh");
+    </script>
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KYXBHVSK4B"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KYXBHVSK4B');
+    </script>
 </head>
-
 <body>
-
-    <div class="top-header">
-        <header>
-            <nav>
-                <div class="logo">
-                    <img src="images/SASTRA_DEEMED_NEW_1.png" alt="" class="logo-img">
-                </div>
-                <ul class="nav-list">
-                    <li><a href="#HOME">HOME</a></li>
-                    <li>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                MATERIALS
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="semester.html">SEM 1</a></li>
-                                <li><a class="dropdown-item" href="semester.html">SEM 2</a></li>
-                                <li><a class="dropdown-item" href="sem3.html">SEM 3</a></li>
-                                <li><a class="dropdown-item" href="sem4.html">SEM 4</a></li>
-                                <li><a class="dropdown-item" href="sem5.html">SEM 5</a></li>
-                                <li><a class="dropdown-item" href="sem6.html">SEM 6</a></li>
-                                <li><a class="dropdown-item" href="sem7.html">SEM 7</a></li>
-                                <li><a class="dropdown-item" href="https://drive.google.com/drive/u/0/folders/1yckeIjA2mTwTkjNm19VoCqdlx6KtYBWC">LAW</a></li>
-
+    <div class="landing">
+        <nav class="navbar navbar-dark navbar-expand-lg p-3">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logok.png" alt="logo" style="height: 45px;" class="rounded-5"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown me-lg-5">
+                            <a class="nav-link dropdown-toggle btn btn-primary text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSfkD17LJ-flF0bp2K0j-fFRoT7Tp2WylV--S4ZoL-2hbBKjcg/viewform?usp=sf_link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Materials
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="semester.html" >Semester 1</a></li>
+                                <li><a class="dropdown-item" href="semester.html">Semester 2</a></li>
+                                <li><a class="dropdown-item" href="sem3.html">Semester 3</a></li>
+                                <li><a class="dropdown-item" href="sem4.html">Semester 4</a></li>
+                                <li><a class="dropdown-item" href="sem5.html">Semester 5</a></li>
+                                <li><a class="dropdown-item" href="sem6.html">Semester 6</a></li>
+                                <li><a class="dropdown-item" href="sem7.html">Semester 7</a></li>
                             </ul>
-                        </div>
-                    </li>
-                    <li><a
-                            href="https://docs.google.com/forms/d/e/1FAIpQLSfkD17LJ-flF0bp2K0j-fFRoT7Tp2WylV--S4ZoL-2hbBKjcg/viewform?usp=sf_link">SUGGESTIONS</a>
-                    </li>
-                    <li><a href="#" class="btn-sr">SIGN IN</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div style="text-align: center;" class="nav-list-m-poster">
-            <ul class="nav-list-m">
-                <li><a href="https://sriman7382.github.io/">HOME</a></li>
-                <li>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            MATERIALS
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="semester.html">SEM 1</a></li>
-                                <li><a class="dropdown-item" href="semester.html">SEM 2</a></li>
-                                <li><a class="dropdown-item" href="sem3.html">SEM 3</a></li>
-                                <li><a class="dropdown-item" href="sem4.html">SEM 4</a></li>
-                                <li><a class="dropdown-item" href="sem5.html">SEM 5</a></li>
-                                <li><a class="dropdown-item" href="sem6.html">SEM 6</a></li>
-                                <li><a class="dropdown-item" href="sem7.html">SEM 7</a></li>
-                                <li><a class="dropdown-item" href="https://drive.google.com/drive/u/0/folders/1yckeIjA2mTwTkjNm19VoCqdlx6KtYBWC">LAW</a></li>
-
-
-                        </ul>
+                        </li>
+                        <li class="nav-item me-lg-5">
+                            <a class="nav-link active" href="Calender.html" target="_blank">Main Calendar</a>
+                        </li><br>
+                        <!-- <li class="nav-item me-lg-5">
+                            <a class="nav-link btn text-bg-primary text-white border-2" href="cgpa.html" target="_blank">Cgpa Calculator</a>
+                        </li> -->
+                        <!-- <li class="nav-item me-lg-5">
+                            <a class="nav-link active" aria-current="page" href="https://sas.sastra.edu/hallplan/index.php">END SEMESTER HALL PLAN</a>
+                        </li> -->
+                        <li class="nav-item dropdown me-lg-5">
+                            <a class="nav-link dropdown-toggle btn btn-success  text-white"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Hall Plan
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="https://sastra.edu/cia2/soc/soc_master.html" target="_blank">CIA II SOC</a></li>
+                                <li><a class="dropdown-item" href="https://sastra.edu/cia2/seee/seee_master.html" target="_blank">CIA II SEE</a></li>
+                                <li><a class="dropdown-item" href="https://sastra.edu/cia2/" target="_blank">CIA II Time Table</a></li>
+                            </ul><br>
+                            <li class="nav-item dropdown me-lg-5">
+                                <a class="nav-link dropdown-toggle btn btn-primary  text-white"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Project Portal
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="https://apps.sastra.edu/socprojectportal/" target="_blank">SOC Portal</a></li>
+                                    <li><a class="dropdown-item" href="https://apps.sastra.edu/seeeproject/" target="_blank">SEE Portal</a></li>
+                                </ul><br>
+                        <li class="nav-item dropdown me-lg-5">
+                            <a class="nav-link dropdown-toggle btn btn-success  text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSfkD17LJ-flF0bp2K0j-fFRoT7Tp2WylV--S4ZoL-2hbBKjcg/viewform?usp=sf_link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Utilities
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="https://unitastic.netlify.app/sgpa" target="_blank">SGPA Calculator</a></li>
+                                <li><a class="dropdown-item" href="https://unitastic.netlify.app/externals" target="_blank">External Marks Calculator</a></li>
+                                <li><a class="dropdown-item" href="https://unitastic.netlify.app/attendance" target="_blank">Estimate Class Skips</a></li>
+                            </ul>
+<!--                         </li>
+                        <li class="nav-item me-lg-5 mt-lg-0 mt-3">
+                            <!-- pill button -->
+<!--                             <a class="nav-link btn  text-white" href="About us/index.html">About Us</a> -->
+<!--                         </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container mt-lg-5 px-3">
+            <div class="row gy-3">
+                <div class="col-lg-6">
+                    <div class="bg-white rounded-5 shadow p-5">
+                        <p>Ready to learn?</p>
+                        <h1>Learning is Fun</h1>
+                        <p>Hello Sastraites! Welcome to Material Base where you can find all materials which are useful for your semester preparation. Basically we plan to bring all the materials which are provided by various faculty.</p>
+                        <a href="semester.html" class="btn btn-primary">Get Started</a>
                     </div>
-                </li>
-                <li><a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSfkD17LJ-flF0bp2K0j-fFRoT7Tp2WylV--S4ZoL-2hbBKjcg/viewform?usp=sf_link">SUGGESTIONS</a>
-                </li>
-                <li style="margin-top: 20px;"><a href="#" class="btn-sr">SIGN IN</a></li>
-            </ul>
+                    <a href='https://play.google.com/store/apps/details?id=com.materialbase.materialbase&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' style="height:20%;"/></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container px-4 mt-5">
+        <div class="row gx-5 gy-3 mt-5">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="bg-white rounded-5 shadow p-3" style="cursor: pointer;" onclick="window.location.href='#'">
+                    <img src="images/pdf.png" alt="pdf" style="width: 25%;" />
+                    <h3>Any PDFs</h3>
+                    <p>for you!!</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="bg-white rounded-5 shadow p-3" style="cursor: pointer;" onclick="window.location.href='#'">
+                    <img src="images/book.png" alt="pdf" style="width: 25%;" />
+                    <h3>Any Books</h3>
+                    <p>for you!!</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="bg-white rounded-5 shadow p-3" style="cursor: pointer;" onclick="window.location.href='#'">
+                    <img src="images/ppt.png" alt="pdf" style="width: 44%;" />
+                    <h3>Any PPTs</h3>
+                    <p>for you!!</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="bg-white rounded-5 shadow p-3" style="cursor: pointer;" onclick="window.location.href='papers.html'">
+                    <img src="images/checklist.png" alt="pdf" style="width: 26%;" />
+                    <h3>Any Papers</h3>
+                    <p>for you!!</p>
+                </div>
+            </div>
         </div>
     </div>
-    <section class="hero-section">
-        <div class="hero-box">
-            <div class="left-box">
-                <p class="ready"></p>Ready To Learn?<br></p>
-                <h1>Learning Is Fun<br></h1>
-                <p class="left-par">Hello Sastraites Welcome to Material Domain Where You Can Find all Materials
-                    Which Are Useful For Your Semester Preparation.<BR>
-                    Basically we Plan To Bring All The Materials Which Are Provided By Various Faculty.</p>
-                <a href="semester.html" class="btn-sr started">Get started</a>
+    </div>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/xzbleaor",
+    title: "Feedback",
+    description: "Report if you found any materials missing or needed!!",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "Tell us",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script>
+
+    <footer class="mt-5 text-center p-3 shadow bg-white">
+        <p>&copy; Material Base 2023. All rights reserved.</p>
+        <p>Content curated from <a href="https://instagram.com/materialhub_sastra">Material Hub</a>.</p>
+    </footer>
+    <!-- <div class="whatsapp-btn bg-white p-3 rounded-circle animate__animated animate__tada animate__delay-4s" style="position: fixed; bottom: 20px; right: 20px; cursor: pointer;" onclick="window.location.href='https://wa.me/917702150488'">
+        <img src="images/WhatsApp.svg" width="40">
+    </div> -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">TERMS OF SERVICE</h1>
+                </div>
+                <div class="modal-body">
+                    Last Edit 19/02/2023
+                    <br>
+                    We had updated our terms of service.
+                    This Website is not officially appoved or organised by university.
+                    Material Base is not responsible if any "INCORRECT CONTENT" provided in materials.If any INCORRECT CONTENT found please report us immediately.<br>
+                    <p>Read all terms of service before accepting!!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="setModalCookie()">Accept</button>
+                </div>
             </div>
-            <div class="right-box">
-                <img src="images/20230209_210517.jpg" alt="header images" class="right-img">
-
-            </div>
         </div>
-    </section>
-    <section class="feature">
-        <div class="boxes al-shadow">
-            <a href="#">
-                <img src="images/pdf.png" alt="pdf" style="width: 60px;">
-                <h2>ANY PDF'S</h2>
-                <p>FOR YOU!!</p>
-            </a>
-        </div>
-        <div class="boxes">
-            <img src="images/book.png" alt="book" style="width: 60px;">
-            <h2>ANY BOOKS</h2>
-            <p>FOR YOU!!</p>
-        </div>
-        <div class="boxes">
-            <img src="images/ppt.png" alt="ppt" style="width: 120px;">
-            <h2>ANY PPT'S</h2>
-            <p>FOR YOU!!</p>
-        </div>
-        <div class="boxes">
-            <a href="papers.html">
-            <img src="images/checklist.png" alt="paper" style="width: 60px;">
-            <h2>ANY PAPERS</h2>
-            <p>FOR YOU!!</p>
-        </a>
-        </div>
-
-    </section>
-
+    </div>
+    <script>
+        window.onload = function() {
+            // if cookie exists, dont show modal else show modal and set cookie
+            if (document.cookie.indexOf("modalShown=true") >= 0) {
+                // cookie exists, do nothing
+            } else {
+                // cookie doesn't exist, show modal
+                var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
+                    keyboard: false
+                })
+                myModal.show()
+            }
+        }
+        setModalCookie = function() {
+            // set cookie to hide modal next time
+            document.cookie = "modalShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+        }
+    </script>
 </body>
-
 </html>

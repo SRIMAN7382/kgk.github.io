@@ -29,7 +29,7 @@ header nav {
 
 }
 .logo {
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: flex-start;
 }
@@ -43,6 +43,10 @@ header nav {
 .nav-list-m
 {
     list-style-type:none;
+}
+.nav-list-m li a
+{
+    text-decoration: none;
 }
 .nav-list li
 {
@@ -112,6 +116,10 @@ header nav {
     margin-top: 10px;
 }
 @media only screen and (max-width: 768px) {
+    .logo img {
+        width: 200%;
+        margin-left: -50px;
+    }
     .nav-list {
         display: none;
     }
@@ -197,6 +205,10 @@ span {
     box-shadow: 0px 5px 15px black;
     cursor: pointer;
 }
+.boxes a {
+    
+    text-decoration: none;
+}
 @media only screen and (max-width: 768px) {
     .boxes {
         width: 100%;
@@ -217,3 +229,84 @@ span {
 {
     box-shadow: 0px 5px 15px whitesmoke;
 }
+.whatsapp-logo {
+    z-index: 100;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.news-app-promo {
+    box-sizing: border-box;
+    background-color: #000;
+    padding: 0.5em;
+    margin-top: 1em;
+  }
+  
+  .news-app-promo__section {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+  }
+  
+  .news-app-promo-text {
+    color: #fff;
+    font-family: helvetica;
+    min-width: 277px;
+    border-right: 0.25em solid #fff;
+    border-left: 0.25em solid #fff;
+    padding: 0 1em;
+    width: 35%;
+    margin: 1em auto;
+    display: block;
+  }
+  
+  .news-app-promo-text__tagline {
+    font-size: 1.09em;
+  }
+  
+  .news-app-promo-text__download {
+    font-size: 2.25em;
+    font-weight: 600;
+  }
+  
+  .news-app-promo-buttons {
+    margin: 0 auto;
+    max-width: 35%;
+    display: block;
+  }
+  
+  .news-app-promo-buttons__buttons {
+    display: block;
+  }
+  
+  .news-app-promo-buttons__logo {
+    display: inline-block;
+  }
+  
+  .news-app-promo-subsection {
+    display: inline-block;
+    margin: 0 auto;
+    margin-right: 10px;
+  }
+  
+  .news-app-promo__bbc-logo {
+    display: inline-block;
+    width: 106px;
+    margin-bottom: 8px;
+  }
+  
+  .news-app-promo__play-store,
+  .news-app-promo__app-store {
+    display: block;
+    width: 161px;
+    height: auto;
+    margin-bottom: 8px;
+  }
+  
+  .news-app-promo-subsection--link {
+    text-decoration: none;
+    border: 0;
+  }
