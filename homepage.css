@@ -1,0 +1,33 @@
+html,body {
+  height: 100%;
+}
+.landing {
+  height: 100%;
+  background-image: url("images/20230209_210517.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.manya-logo {
+  width: 25%;
+}
+
+@media only screen and (max-width: 768px) {
+  .landing {
+      height: 170%;
+  }
+  .manya-logo {
+      width: 50%;
+  }
+}
+/* confetti.css */
+.confetti {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none;
+}
